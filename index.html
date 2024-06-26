@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travel-Recommendation</title>
+        <link rel = "stylesheet" href = "travelrecommendation.css">
+    </head>
+    <body>
+        <nav class = "navbar">
+            <div id = "logo">
+                <img src = "image/Plain.png" id = "logo_img" alt = "Plain icon">
+                <span>TravelBloom</span> 
+            </div>
+            <div class = "topdiv">
+                <ul>
+                    <li><a class = "topmenu" href="index.html"> Home </a></li>
+                    <li><a class = "topmenu" href="Aboutus.html"> About Us </a></li>
+                    <li><a class = "topmenu" href="ContactUs.html"> Contact Us </a></li>
+                </ul>
+            </div>
+            <div class = "search-bar">
+                <input type="text" class="search" id="site-search"  placeholder="Enter a desitination or keyword">
+                <img src="image/seach-icon1.png" alt="Search Icon" class="search-icon">
+                <button id="search-button">Search</button>
+                <button id="clear-button">Clear</button>       
+            </div>
+        </nav>
+
+        <div class="background-image">
+            <div class = "mid">
+                <div class="vertical-line"></div>
+                    <div class="social-links">
+                        <a href="https://x.com/i/flow/login">
+                            <img src="image/twitter.jpeg" alt="Twitter">
+                        </a>
+                        <a href="https://www.facebook.com">
+                            <img src="image/f.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.youtube.com/">
+                            <img src="image/youtube.png" alt="YouTube">
+                        </a>
+                        <a href="https://www.instagram.com/accounts/login/?hl=en">
+                            <img src="image/instagram.png" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+                <div class = "content">
+                    <h1 class = "content-tile">
+                        Explore<br>
+                        Dream<br>
+                        Destination
+                    </h1>
+                    <p class = "content-para">It encourages exploration of unfamiliar territories, 
+                        embracing diverse cultures and landscpes, while pursuing the desired 
+                        designation that captivates the heart and ignites a sense of wonder.
+                    </p>
+                    <button id="booknow_button">BOOK NOW</button>
+                </div>
+            </div>
+            <div class="searchResultsContainer" id="searchResultsContainer">
+                <div class="search-results">
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+            <script src="script.js"></script>
+            <script src="api.json"></script>
+           
+    </body>
+</html>

@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden; /* Prevent background from scrolling */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #333; /* Solid background color */
+    color: white;
+    padding: 10px 20px;
+    position: fixed; /* Ensure navbar stays at the top */
+    top: 0;
+    z-index: 10; /* High z-index to ensure it's above other elements */
+}
+
+nav ul {
+    list-style-type: none;
+    /* padding: 0; */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+
+#logo span {
+    font-family: 'Lobster', cursive; 
+    font-size: 24px; /* Adjust the font size of the text */
+    font-weight: bold; /* Make the text bold */
+    color: white; /* Text color */
+    font-style: italic; /* Make the text italic to lean towards the left */
+    transform: skewX(-10deg); /* Skew the text to the left */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+}
+
+#Companyname {
+    font-style: italic;
+    font-weight: 350;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#logo_img {
+    width: 30px;
+    margin-right: 10px;
+    float: left;
+    font-size: 50px;
+    fill: white; 
+    stroke: black;
+    stroke-width: 2;
+}
+
+.topdiv a {
+    margin-right: 25px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.background-image {
+    background-image: url('image/travel-banner.jpeg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    color: white;
+    padding: 20px;
+    z-index: 1; /* Ensure background is behind all content */
+}
+
+.background-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0,0,0,0),rgba(0,0,0,0.8));
+    z-index: 1;
+}
+
+.mid {
+    margin-left: 5px;
+}
+
+.content {
+    margin-left: 3%;
+    z-index: 2;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    left: 10%;
+    text-align: left;
+}
+
+.content-title {
+    position: relative;
+    z-index: 2;
+    margin-top: 1%;
+    margin-left: 6%;
+    font-size: 20px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.content-para {
+    position: relative;
+    z-index: 2;
+    margin-top: 1%;
+    margin-left: 6%;
+    font-size: 1em;
+    font-family: Italic;
+    line-height: 20px;
+    font-weight: 600;
+    width: 900px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: fit-content;
+}
+
+.mid {
+    height: 600px;             /* Height of the container */
+    display: flex;
+    justify-content: left;   /* Center the line horizontally */
+}
+
+.vertical-line {
+    width: 3px;                /* Width of the vertical line */
+    height: 150px;             /* Height of the vertical line */
+    background-color: white;   /* Color of the vertical line */
+    margin-right: 30px;        /* Space between the line and the social links */
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;    /* Stack icons vertically */
+    gap: 10px;            /* Space between each icon */
+    position: absolute;
+    z-index: 2;
+    margin-top: 200px;
+ 
+}
+
+.social-links a img {
+    width: 24px;               /* Width of the social media icons */
+    height: 24px;              /* Height of the social media icons */
+    border-radius: 30px;
+}
+
+
+.team {
+    display: flex;
+    z-index: 2;
+    margin-top: 200px;
+    /* background-color: rgba(0, 0, 0, 0.213); */
+    padding-top: 2.3%;
+    padding-bottom: 1.8%;
+    padding-left: -8px;
+    padding-right: 0.2%;
+    border-radius: 10px;
+    width: 1100px;
+    margin-left: 9%;
+}
+
+.team-content{
+    /* display: flex;
+    z-index: 2;
+   
+    margin-left: 7%;
+    justify-content: center;
+    */
+    display: flex; /* Flexbox layout for the container */
+    justify-content: space-around; /* Space profiles evenly */
+    align-items: flex-start; /* Align profiles to the start */
+    width: 90%; /* Adjust width as needed */
+    max-width: 1200px; /* Maximum width to avoid stretching too much */
+    margin: auto; 
+    margin-top: 1%;
+    align-items: center;
+    display: flex;
+    
+}
+
+.team-title{
+    position: relative;
+    z-index:2 ;
+    margin-top: 2%;
+    margin-left:3%;
+    font-size: 25px;
+    line-height: 110%;
+}
+
+/* .team img{
+    height: 100px;
+    width: auto;
+    margin-bottom: 4%;
+    margin-top: 0px;
+} */
+
+.person {
+    background-color: rgba(0, 0, 0, 0.213);
+    /* background-color: white; */
+    border: 1px solid #ccc; /* Border to define the edges */
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a 3D effect */
+    overflow: hidden; /* Ensure content stays within rounded corners */
+    text-align: center; /* Center text */
+    width: 250px; /* Fixed width for the profile container */
+    height: 180px;    
+    margin-bottom: 120px; /* Margin around the profile container */
+    margin: 20px;
+    padding: 0px; /* Padding inside the profile container */
+}
+
+.profile-image {
+    flex: 0 0 auto; /* Prevent the image from growing or shrinking */
+    padding-right: 20px;
+}
+
+.profilepic {
+    border-radius: 5%; /* Circular profile picture */
+    width: 24px; /* Fixed width for the image */
+    height: 24px; /* Fixed height for the image */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    margin-right: 60%;
+    background-color: blue;
+    margin-top: 20px
+}
+
+.profile-content {
+    padding: 20px; /* Padding inside the profile content */
+}
+
+.name h2 {
+    margin-top: -30.0px; /* Margin around the name */
+    font-size: 0.9em; /* Larger font size for the name */
+    color: white; /* Darker color for the name */
+}
+
+.role {
+    font-size: 1em; /* Font size for the role */
+    color: white; /* Lighter color for the role */
+}
+.role-button {
+    display: inline-block; /* Display as an inline-block element */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 1em; /* Font size for the button */
+    color: #ffffff; /* White text color */
+    background-color: #007bff; /* Blue background color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center; /* Center text inside the button */
+    height: 30px;
+}
+
+.role-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+
